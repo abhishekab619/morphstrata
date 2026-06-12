@@ -32,15 +32,11 @@ All students are adversarially fine-tuned after generation. At inference, `M` st
 
 ## Datasets
 
-Experiments cover three real-world multivariate time-series benchmarks and two synthetic datasets with controlled temporal structure.
-
-| Dataset | Resolution | Target | Spectral entropy | Memory |
-|---|---|---|---|---|
-| Jena Climate (JENA) | 60-min | Air temperature | 0.33 (low) | Long (20,000+ min) |
-| Electricity Load Diagrams (ECL) | 15-min | Electricity load | 0.81 | Long (30,000+ min) |
-| Appliances Energy Prediction (AEP) | 10-min | Appliance energy | 0.82 | Medium (260 min) |
-| Synthetic Low (periodic) | 10-min | Synthetic | 0.43 | Medium |
-| Synthetic High (periodic) | 10-min | Synthetic | 0.96 | Short |
+| Dataset | Resolution | Target |
+|---|---|---|
+| Jena Climate (JENA) | 60-min | Air temperature |
+| Electricity Load Diagrams (ECL) | 15-min | Electricity load |
+| Appliances Energy Prediction (AEP) | 10-min | Appliance energy |
 
 ---
 
@@ -61,9 +57,9 @@ Evaluated against FGSM, BIM, and PGD (white-box, L-inf) across ε ∈ {0.1, 0.2,
 ```
 morphstrata/
 └── notebooks/
-    ├── JENA_Resource_Monitor_Retrofit.ipynb
-    ├── ECL_Resource_Monitor_Retrofit.ipynb
-    └── AppliancesEnergy_Resourcec_Monitor_Retrofit.ipynb
+    ├── JENA.ipynb
+    ├── ECL.ipynb
+    └── AEP.ipynb
 ```
 
 Each notebook is a self-contained pipeline covering:
