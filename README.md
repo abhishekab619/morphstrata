@@ -76,7 +76,7 @@ Each notebook is a self-contained pipeline covering:
 
 ## Setup
 
-Notebooks were developed and run on Google Colab with an NVIDIA L4 GPU (22.5 GB VRAM). Adjust the `PROJECT_ROOT` and drive mount paths at the top of each notebook to match your environment.
+Notebooks were developed and run on Google Colab with the L4 runtime. Adjust the `PROJECT_ROOT` and drive mount paths at the top of each notebook to match your environment.
 
 **Dependencies:**
 
