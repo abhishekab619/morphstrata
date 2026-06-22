@@ -1,8 +1,12 @@
 # MorphStrata
 
+**Paper:** [arXiv:2606.17435](https://arxiv.org/abs/2606.17435)
+
 Layer-specific perturbation strategy for generating diverse student models in Moving Target Defense (MTD) for Transformer-based time-series forecasting.
 
 MorphStrata extends the [Morphence](https://arxiv.org/abs/2108.13952) framework by confining stochastic Gaussian noise to distinct Transformer components (self-attention projections, feed-forward networks, layer normalization, input/output projections) rather than perturbing all parameters uniformly. This produces a student pool with greater structural heterogeneity and reduced adversarial transferability across ensemble members.
+
+This implementation was designed and developed by Abhishek Bhardwaj as part of ongoing research at the Machine Intelligence and Complex Systems Lab, San José State University, under the supervision of Dr. Saptarshi Sengupta.
 
 ---
 
@@ -55,7 +59,7 @@ Evaluated against FGSM, BIM, and PGD (white-box, L-inf) across ε ∈ {0.1, 0.2,
 ## Repository Structure
 
 ```
-morphstrata/
+ab-adv-quant-def/
 └── notebooks/
     ├── JENA.ipynb
     ├── ECL.ipynb
@@ -108,6 +112,24 @@ pip install torch numpy pandas scikit-learn psutil thop
 | Trials per config | 30 |
 | Hardware | NVIDIA L4, 22.5 GB VRAM |
 | Framework | PyTorch 2.10.0, CUDA 12.8 |
+
+---
+
+## Citation
+
+If you use this code, please cite:
+
+```bibtex
+@misc{bhardwaj2026morphstrata,
+  title={MorphStrata: Layer-Specific Perturbations for Generating Morphence Students in Time-Series Moving Target Defense},
+  author={Bhardwaj, Abhishek and Doshi, Arnav and Nagarajan, Anusri and Ta, Thanh Quynh Nhu and Masum, Mohammad and Chun, Robert and Sen, Jaydip and Sengupta, Saptarshi},
+  year={2026},
+  eprint={2606.17435},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  url={https://arxiv.org/abs/2606.17435}
+}
+```
 
 ---
 
