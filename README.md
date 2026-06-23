@@ -59,7 +59,7 @@ Evaluated against FGSM, BIM, and PGD (white-box, L-inf) across ε ∈ {0.1, 0.2,
 ## Repository Structure
 
 ```
-ab-adv-quant-def/
+MorphStrata/
 └── notebooks/
     ├── JENA.ipynb
     ├── ECL.ipynb
